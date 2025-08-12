@@ -24,7 +24,7 @@ const ProductCart = ({product}) => {
       {/* Product Info */}
       <div className="p-5">
         <h2 className="text-lg font-semibold text-gray-800 truncate">{title}</h2>
-        <p className="text-gray-600 text-sm mt-2 line-clamp-2">{description}</p>
+        <p className="text-gray-600 text-sm mt-2 line-clamp-2">{description.slice(0,50)}...{""}<span className='text-blue-600 font-semibold'>more</span></p>
         
         {/* Price */}
         <div className="flex justify-between items-center mt-4">

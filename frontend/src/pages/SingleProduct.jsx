@@ -67,7 +67,7 @@ const SingleProduct = () => {
 
 
 
-          {users && users?.isAdmin && (<form onSubmit={handleSubmit(productUpdatehandler)} className='flex justify-center flex-col p-10 pt-10 w-[700px]  gap-10  m-10'>
+          {users && users?.isAdmin && (<form onSubmit={handleSubmit(productUpdatehandler)} className='flex justify-center flex-col border p-10 pt-10 w-[700px]  gap-10  m-10'>
 
             <input {...register('title')} className='outline-none border-b text-3xl' type='text' placeholder='Title' />
 

@@ -20,11 +20,18 @@
       "Email": "rohit@gmail.com",
       "password": "nidhi",
       "isAdmin": false
+    },
+    {
+      "id": "inAh1Ko5rZunaUqfT9c92",
+      "usename": "manish kumar",
+      "Email": "manish@gmail.com",
+      "password": "neha",
+      "isAdmin": false
     }
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Wireless Bluetooth Headphones",
       "description": "Over-ear headphones with noise cancellation and 30 hours of battery life.",
       "image": "https://i.pinimg.com/736x/2a/d5/b4/2ad5b401c27495fd9979dbe9547425e2.jpg",
@@ -32,7 +39,7 @@
       "category": "Electronics"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Classic Leather Wallet",
       "description": "Premium genuine leather wallet with multiple card slots and a coin pocket.",
       "image": "https://i.pinimg.com/736x/0e/d8/9f/0ed89f316c493c4ffe1f13d83944c000.jpg",
@@ -40,7 +47,7 @@
       "category": "Accessories"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Sports Running Shoes",
       "description": "Lightweight running shoes with breathable mesh and durable rubber sole.",
       "image": "https://i.pinimg.com/1200x/35/88/4c/35884cd5b3d8c7af9293bde1e3a27f29.jpg",
@@ -48,7 +55,7 @@
       "category": "Footwear"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Stainless Steel Water Bottle",
       "description": "1-liter insulated bottle keeps drinks hot or cold for up to 12 hours.",
       "image": "https://i.pinimg.com/736x/4d/34/11/4d3411e84c86ebcdc1f1298ea2f9338d.jpg",
@@ -56,7 +63,7 @@
       "category": "Home & Kitchen"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Smart LED TV 43-inch",
       "description": "Full HD Smart TV with built-in apps, HDMI ports, and immersive sound.",
       "image": "https://i.pinimg.com/736x/ae/e9/cc/aee9ccfff599cd7fb3cfb7df020a478a.jpg",

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {useForm} from 'react-hook-form'
 import { useDispatch } from 'react-redux'
 import { asyncloginuser } from '../store/userAction'
@@ -13,7 +13,7 @@ const Login = () => {
     console.log(data);
     dispatch(asyncloginuser(data))
     reset()
-    navigate('/admin/create-product')
+    navigate('/')
   }
   return (
     <form onSubmit={handleSubmit(submitHandler)} className='flex justify-center flex-col p-10 w-[500px] h-[400px] gap-10 border  m-10'>
