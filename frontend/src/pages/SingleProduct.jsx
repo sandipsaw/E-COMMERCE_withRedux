@@ -46,16 +46,20 @@ const SingleProduct = () => {
 
   return (
     product ?
-      <div className='flex flex-col' >
-        <div className='flex w-[1000px] items-start m-25 border'>
-          <div>
+      <div className='flex flex-col ' >
+        <div className='flex w-[1000px] items-start p-10 m-25 border'>
+          <div className=''>
             <img className='w-[600px]' src={product.image} />
           </div>
-          <div className='p-10'>
+          <div className='pl-10 pr-10 pb-10 '>
             <h2 className='text-5xl font-semibold'>{product.title}</h2>
-            <p className='text-3xl '>{product.description}</p>
-            <p className='text-2xl font-semibold'>{product.price}</p>
-            <p className='text-2xl font-semibold'>{product.category}</p>
+            <p className='text-3xl mt-2 '>{product.description} </p>
+            <p className='text-2xl text-green-500 mt-2 font-semibold'>{product.price}Rs</p>
+            <div className="flex text-yellow-400 text-2xl">
+                        ★★★★☆
+                    </div>
+                    <p className="text-white-700 text-lg">(4.2 out of 5 based on 128 reviews)</p>
+         
           </div>
         </div>
         <div>
@@ -63,7 +67,7 @@ const SingleProduct = () => {
 
 
 
-          {users && users?.isAdmin && (<form onSubmit={handleSubmit(productUpdatehandler)} className='flex justify-center flex-col p-10 pt-10 w-[700px]  gap-10 border  m-10'>
+          {users && users?.isAdmin && (<form onSubmit={handleSubmit(productUpdatehandler)} className='flex justify-center flex-col p-10 pt-10 w-[700px]  gap-10  m-10'>
 
             <input {...register('title')} className='outline-none border-b text-3xl' type='text' placeholder='Title' />
 
