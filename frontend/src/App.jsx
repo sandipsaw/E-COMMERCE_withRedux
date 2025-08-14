@@ -6,6 +6,7 @@ import MainRoutes from './routes/MainRoutes';
 import Nav from './components/Nav';
 import { asyncCurrentusers } from './store/userAction';
 import { asyncLoadProduct } from './store/ProductAction';
+import { asyncloginuser } from './store/userAction';
 const App = () => {
   // const getproduct = async () =>{
   //   try{
@@ -21,7 +22,7 @@ const App = () => {
   useEffect(() => {
     dispatch(asyncCurrentusers())
     dispatch(asyncLoadProduct())
-
+    dispatch(asyncloginuser())
   }, [])
   
 

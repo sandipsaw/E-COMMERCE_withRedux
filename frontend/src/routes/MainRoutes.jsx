@@ -10,6 +10,7 @@ import UpdateProduct from '../pages/admin/UpdateProduct'
 import ProductCart from '../pages/ProductCart'
 import SingleProduct from '../pages/SingleProduct'
 import Logout from '../pages/Logout'
+import UserProfile from '../pages/UserProfile'
 const MainRoutes = () => {
 
 
@@ -27,6 +28,8 @@ const MainRoutes = () => {
         <Route path='/productcart' element={<ProductCart/>}/>
         <Route path='/singleproduct/:id' element={<SingleProduct/>}/>
         <Route path='/logout' element={<Logout />}/>
+        <Route path='/user-profile' element={<UserProfile/>}/>
+
 
     </Routes>
   )

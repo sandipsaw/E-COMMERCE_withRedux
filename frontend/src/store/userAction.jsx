@@ -1,4 +1,5 @@
 import axios from '../api/AxiosConfig'
+import Login from '../pages/Login';
 import {loadUser} from './userSlice';
 
 
@@ -17,18 +18,25 @@ export const asyncCurrentusers= () => async (dispatch,getState)=>{
 }
 
 
-export const asynclogoutuser=(user) => (dispatch,getState)=>{
+export const asynclogoutuser=() => (dispatch,getState)=>{
 
     try {
         localStorage.removeItem("user")
         
     } catch (error) {
-        console.log(error);
-        
-        
+        console.log(error);  
     }
+}
+export const asyncdeleteuser=(id) => async(dispatch,getState)=>{
 
-
+    try {
+        
+        const res=await axios.delete("/users/" + id);
+        localStorage.removeItem("user")
+        
+    } catch (error) {
+        console.log(error);  
+    }
 }
 
 export const asyncloginuser=(user)=> async (dispatch,getState)=>{
@@ -46,6 +54,22 @@ export const asyncloginuser=(user)=> async (dispatch,getState)=>{
     }
 }
  
+export const asyncrUpdatetusers = (id,user) => async(dispatch,getState)=>{
+    try{
+        // console.log("id aure user",id,"user",user);
+        
+        const res = await axios.patch("/users/" +id,user)
+        console.log( "updated users" ,res);
+        dispatch(loadUser(res.data));
+
+        localStorage.setItem("user",JSON.stringify(res.data))
+
+    }catch(error){
+        console.log(error);
+    }
+}
+
+
 
 
 export const asyncregisterusers = (user) => async (dispatch,getstate) =>{

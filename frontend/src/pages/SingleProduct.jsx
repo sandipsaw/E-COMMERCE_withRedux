@@ -32,11 +32,6 @@ const SingleProduct = () => {
 
     // dispatch(asyncregisterusers(product))
     dispatch(asyncUpdateproduct(id, product))
-
-
-
-
-
   }
 
   const Deletehandler = () => {
